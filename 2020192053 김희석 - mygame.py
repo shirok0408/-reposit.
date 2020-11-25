@@ -101,7 +101,6 @@ def runGame():
     boom_count2 = 0
     BatShot = False
     PurpleShot = False
-    tin=0
 
     fire_x = pad_width
     fire_y = random.randrange(0, pad_height)
