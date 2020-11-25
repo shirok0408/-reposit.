@@ -342,8 +342,6 @@ def initGame():
     crashcnt = 0
 
     pygame.init()
-    gamepad = pygame.display.set_mode((pad_width, pad_height))  ##패드 크기 정의
-    pygame.display.set_caption('PyPlaneGame')  ##게임창 타이틀 정하기
     aircraft = pygame.image.load('plane.png')
     background1 = pygame.image.load('maxresdefault.jpg')
     background2 = pygame.image.load('maxresdefault.jpg')  ##background1이랑 같은 그림 - 다른 그림 원하면 그냥 다른 그림 넣으면 됨
@@ -361,6 +359,8 @@ def initGame():
 
     clock = pygame.time.Clock()  ##게임의 FPS 설정을 위함
     totallife = int(input("Total Life: ", )) ##Total Life 몇으로 게임할건지 결정
+    gamepad = pygame.display.set_mode((pad_width, pad_height))  ##패드 크기 정의
+    pygame.display.set_caption('PyPlaneGame')  ##게임창 타이틀 정하기
     runGame()  ## 게임 돌리기
 
 initGame()

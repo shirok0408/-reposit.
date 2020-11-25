@@ -64,11 +64,11 @@ def initPro():
     global ball, gamepad, clock, coeffs
 
     pygame.init()
-    gamepad = pygame.display.set_mode((pad_width, pad_height))
-    pygame.display.set_caption('PolyDisp')
     clock = pygame.time.Clock()
     ball = pygame.image.load('ball1.jpg')
     coeffs = [int(x) for x in input('각 계수를 띄어쓰기로 순서대로 입력하세요: ').split(' ')] ## basis: 0차~deg차 순서
+    gamepad = pygame.display.set_mode((pad_width, pad_height))
+    pygame.display.set_caption('PolyDisp')
     runPro()
 
 initPro()
